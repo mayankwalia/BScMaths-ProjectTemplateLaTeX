@@ -1,0 +1,66 @@
+% Created by Mayank Walia
+% Github github.com/mayankwalia
+% Created for Department of Mathematics, SoPS DIT University
+
+% For graphics
+\usepackage{tikz}
+% For aerial font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\mode<presentation>
+\setbeamersize{text margin left=0cm,text margin right=0cm}
+% #D7DF36
+\definecolor{green}{rgb}{0.843, 0.875, 0.212}
+% #003371
+\definecolor{blue}{rgb}{0.0,0.20,0.443}
+
+\setbeamercolor{green}{fg=white,bg=green}
+\setbeamercolor{blue}{fg=white,bg=blue}
+
+
+% Frame title
+\defbeamertemplate*{frametitle}{bsc}[1][]
+{    
+    \vspace{0.2cm}
+    \centering
+    \begin{logos}
+    \hspace{0.2cm}
+    \includegraphics[width=1.5cm]{years.png}
+    \hfill
+    \includegraphics[width=1.5cm]{logo.png}
+    \hspace{0.2cm}
+    \end{logos}
+}
+
+% Title page
+\defbeamertemplate*{title page}{BSC}[1][]
+{
+\begin{beamercolorbox}[ht={0.3\paperheight}]{white}
+    % \vspace{0.5cm}
+    \includegraphics[width=1.8cm]{years.png}
+    \vspace{0.5cm}
+    \hspace{0.2cm}
+    \includegraphics[width=1.8cm]{logo.png}
+    \centering
+\end{beamercolorbox}
+    \hfill
+    % sep=85pt
+    \begin{beamercolorbox}[ht={0.015\paperheight}]{green}\end{beamercolorbox}
+    \vskip-1
+    \begin{beamercolorbox}[c,ht={0.685\paperheight}]{blue}
+        \centering
+        \usebeamerfont{Title}
+        \inserttitle\par
+    \end{beamercolorbox}
+  \vfill
+} 
+
+\setbeamertemplate{footline}{
+   \begin{beamercolorbox}[ht=3ex]{}
+    \vspace{0.05cm}
+    \tiny {\hspace{0.5cm}23/11/2022 \hfill DIT Univesity, Dehradun \hfill \insertframenumber \hspace{0.5cm}}
+    \vspace{0.1cm}
+   \end{beamercolorbox}
+} 
+
+\setbeamertemplate{navigation symbols}{}
